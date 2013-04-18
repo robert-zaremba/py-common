@@ -1,7 +1,5 @@
 from multiprocessing import Event
 
-print("W test utils")
-
 def debug_print(prefix):
     def partial(data, callback=None):
         print(str(prefix) + str(data)+'#')

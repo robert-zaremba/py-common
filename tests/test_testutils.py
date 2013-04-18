@@ -1,9 +1,3 @@
-# import sys
-# from pprint import pprint
-# pprint(sys.path)
-# import pytest
-# pytest.set_trace()
-
 from src.testutils import *
 from functools import partial
 
