@@ -1,0 +1,3 @@
+#!/bin/bash
+
+exec svlogd -tt -l 160 main error

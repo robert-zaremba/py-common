@@ -1,0 +1,7 @@
+n2
+### patterns
+# each log line starts with date time
+# below we mach every line with contains in the middle "B " followed by "---"
+-*D *---*
+-*I *---*
+-*W *---*
