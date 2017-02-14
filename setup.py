@@ -83,7 +83,7 @@ Skipped tests will appear as ERRORs.")
 
 setup(
     name='pycommon',
-    version='0.4',
+    version='0.5',
     use_2to3=True,
     cmdclass={'test': TestCommand},
     description="Common modules which you may need for your daily projects",
