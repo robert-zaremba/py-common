@@ -88,6 +88,10 @@ def make_logger(name,
                 colored=_log_colored,
                 propagate=0,
                 force=False):
+    """Setup logger handlers: adds fancy StreamHandler.
+If the logger already has some handler defined then it will not setup
+any new handlers unless @force=True.
+Use @name=None or @name='root' to setup the default logging logger (Root)."""
     if level is None:
         level = logging.DEBUG if debug else logging.INFO
     logger = logging.getLogger(name)
@@ -108,5 +112,5 @@ def make_logger(name,
 # else:
 #     log = make_logger(_name, debug=_debug)
 
-loggerRoot = make_logger(
-    None, logging.WARNING if _debug else logging.INFO, debug=_debug)
+# loggerRoot = make_logger(
+#     None, logging.WARNING if _debug else logging.INFO, debug=_debug)
